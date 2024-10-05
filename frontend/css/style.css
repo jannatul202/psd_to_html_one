@@ -1,0 +1,412 @@
+/*
+  Theme Name: Psd_to_html_one
+  Support: 
+  Description:   
+  Version: 1.0
+*/
+
+/* CSS Index
+============================
+01. Google Fonts
+02. Variable CSS start
+03. common css
+04. header_sec css
+05. nav_sec css
+06. hero_sec css
+07. card_sec css
+08. content_sec css
+09. footer_sec css
+10. copyright_sec css
+
+============================
+*/
+/*=============================
+  01. Google Fonts
+===============================*/
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*=============================
+ 02. Variable CSS start
+===============================*/
+:root {
+  --heading-font-family: "Gowun Batang", system-ui;
+  --peragraph-font-family: "Open Sans", system-ui;
+  --body-bg:#eaf2f4;
+  --primary: #049bac;
+  --light-border:#adbcbf;
+  --light-primary: #d5e5e8;
+  --white: #ffffff;
+  --black:#282627;
+  --off-white:#e7ecef;
+  --transition: 0.4s ease-in-out;;
+}
+
+/* =================================
+  03. common css
+=====================================*/
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;  
+  box-sizing: border-box;
+}
+body{
+  font-family: var(--body-font-family);
+  line-height: var(--body-line-height);
+  color: var(--black);
+  overflow-x: hidden;
+  background: var(--black);
+}
+h1, h2,h3,h4,h5,h6,a{
+  font-family: var(--heading-font-family);
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+a{
+  color: var(--black);
+  text-decoration: none;
+}
+p{
+    font-family: var(--peragraph-font-family);
+}
+.sec_paddding{
+    padding: 30px 20px;
+}
+.template{
+    width: 1000px;
+    margin: 0 auto;
+    background: var(--body-bg);
+}
+/* =================================
+  04. header_sec css
+=====================================*/
+.header_sec{
+    overflow: hidden;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--light-border);
+    /*border-bottom: 2px solid #cdd8d8;*/
+}
+.header_sec .logo_des {
+    float: left;
+    width: 600px;
+}
+.header_sec .logo_des .logo{
+    float: left;
+    width: 230px;
+    border-right: 1px solid var(--black);
+}
+.header_sec .logo_des .logo a .logo_text {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 400;
+    /*font-weight: 600;*/
+}
+.header_sec .logo_des .descrip{
+    float: right;
+    width: 355px;
+}
+.header_sec .logo_des .descrip .sub_tittle {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 10px 0px 0px 10px;
+    color: #666666;
+}
+.header_sec .form{
+   text-align: right;
+}
+.header_sec .form input[type="search"]{
+    background: var(--light-primary);
+    border: 1px solid var(--light-border);
+    width: 200px;
+    padding: 6px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.header_sec .form button[type="submit"]{
+    background: var(--light-primary);
+    border: 1px solid var(--light-border);
+    padding: 6px;
+    margin-left: 3px;
+    font-size: 16px;
+}
+/* =================================
+  05. nav_sec css
+=====================================*/
+.nav_sec{
+    overflow: hidden;
+    padding: 0px 20px;
+}
+.nav_sec .nav_menu ul li{
+    float: left;
+}
+.nav_sec .nav_menu ul li a {
+    display: block;
+    font-size: 18px;
+    border-right: 1px solid var(--light-border);
+    margin: 5px;
+    padding: 5px 10px;
+}
+.nav_sec .nav_con{
+    text-align: right;
+    font-size: 16px;
+}
+/* =================================
+  06. hero_sec css
+=====================================*/
+.hero_sec{
+    padding: 25px 20px 40px 20px;
+    overflow: hidden;
+    background: var(--primary);
+}
+.hero_sec .hero_left_con{
+    float: left;
+    width: 440px;
+}
+.hero_sec .hero_left_con .hero_tittle .htittle {
+    font-size: 32px;
+    color: var(--white);
+    line-height: 50px;
+    border-bottom: 1px solid var(--white);
+}
+.hero_sec .hero_left_con .hero_des .descrip {
+    color: var(--white);
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 300;
+}
+.hero_sec .hero_left_con .hero_ban .btn {
+    font-size: 20px;
+    line-height: 29px;
+    background: #dedede;
+    padding: 5px 25px;
+    font-weight: 600;
+}
+.hero_sec .hero_left_con .hero_ban .btn:first-child{
+    margin-right: 60px;
+}
+.hero_sec .hero_right_con {
+    overflow: hidden;
+    float: right;
+    margin-top: 20px;
+}
+.hero_sec .hero_right_con .hero_img img{
+    background: var(--white);
+    padding: 10px;
+    border: 1px solid var(--light-border);
+    overflow: hidden;
+}
+/* =================================
+  07. card_sec css
+=====================================*/
+.card_sec{
+    display: flex;
+}
+.card_sec .cards {
+    border: 1px solid var(--light-border);
+}
+.card_sec .cards .card_head{
+    border-bottom: 2px solid var(--light-border);
+}
+.card_sec .cards .card_head .card_tittle {
+    font-size: 22px;
+    line-height: 48px;
+    text-align: center;
+    color: var(--primary);
+    padding: 5px 0px;
+}
+.card_sec .cards .card_body{
+    margin: 0px 6px;
+}
+.card_sec .cards .card_body .cbody_tittle {
+    border-bottom: 1px solid var(--black);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 29px;
+    color: #666666;
+}
+.card_sec .cards .card_body .descrip {
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 8px;
+    font-weight: 300;
+}
+.card_sec .cards .card_footer{
+    text-align: right;
+    margin: 0px 10px;
+}
+.card_sec .cards .card_footer a.cbtn {
+    font-family: var(--peragraph-font-family);
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--black);
+    font-weight: 500;
+    margin-bottom: 19px;
+}
+/* =================================
+  08. content_sec css
+=====================================*/
+.content_sec{
+    overflow: hidden;
+}
+.content_sec .content_tittle {
+    font-size: 21px;
+    line-height: 22px;
+    border-bottom: 1px solid var(--light-border);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    color: #666666;
+}
+.content_sec .left_content {
+    float: left;
+    width: 385px;
+    overflow: hidden;
+}
+.content_sec .left_content .lcontent_main {
+    border-bottom: 1px solid var(--light-border);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+.content_sec .left_content .lcontent_main:last-child {
+    border-bottom: 0px solid var(--light-border);
+}
+.content_sec .left_content .lcontent_main .lcontent_img {
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.content_sec .left_content .lcontent_main .lcontent_img img {
+    background: var(--white);
+    padding: 4px;
+    border: 1px solid var(--black);
+}
+.content_sec .left_content .lcontent_main .lcontent_des .lcontent_des_tittle {
+    font-size: 16px;
+}
+.content_sec .left_content .lcontent_main .lcontent_des .descrip{
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 2px;
+    font-weight: 300;
+}
+.content_sec .left_content .lcontent_main .continue_btn {
+    text-align: right;
+}
+.content_sec .left_content .lcontent_main .continue_btn .cbtn {
+    font-size: 13px;
+    color: black;
+    font-family: var(--peragraph-font-family);
+    font-weight: 500;
+}
+.content_sec .right_content .rcontent_main{
+    padding-top: 10px;
+}
+.content_sec .right_content {
+    width: 530px;
+    float: right;
+}
+.content_sec .right_content .rcontent_main .rcontent_img {
+    float: left;
+    margin-right: 20px;
+}
+.content_sec .right_content .rcontent_main .rcontent_img img{
+    background: var(--white);
+    padding: 4px;
+    border: 1px solid var(--black);
+}
+.content_sec .right_content .rcontent_main .rcontent_des .descrip{
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 2px;
+    font-weight: 300;
+}
+/* =================================
+  09. footer_sec css
+=====================================*/
+.footer_sec{
+    display: flex;
+    overflow: hidden;
+    color: #98989a;
+    background: #2c2c2d;
+}
+.footer_sec .footer_main {
+    width: 300px;
+    margin-right: 30px;
+}
+.footer_sec .footer_main:last-child{
+    margin-right: 0px;
+}
+.footer_sec .footer_main .footer_tittle {
+    border-bottom: 1px solid;
+    font-size: 21px;
+    line-height: 22px;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+.footer_sec .footer_main .footer_body .form label{
+    font-size: 13px;
+    line-height: 22px;
+    font-family: var(--peragraph-font-family);
+}
+.footer_sec .footer_main .footer_body .unsubsribe {
+    margin-top: 5px;
+}
+.footer_sec .footer_main .footer_body .unsubsribe a{
+    color: #98989a;
+    font-size: 13px;
+    line-height: 22px;
+    font-family: var(--peragraph-font-family);
+}
+.footer_sec .footer_main .footer_body .fdes a{
+    color: var(--primary);
+    font-size: 13px;
+    line-height: 22px;
+    font-family: var(--peragraph-font-family);
+}
+.footer_sec .footer_main .footer_body ul li{
+    font-size: 13px;
+    line-height: 22px;
+    font-family: var(--peragraph-font-family);
+}
+.footer_sec .footer_main .footer_body ul li a{
+    font-size: 13px;
+    line-height: 22px;
+    color: #98989a;
+    font-family: var(--peragraph-font-family);
+}
+input#email {
+    margin-top: 5px;
+    width: 265px;
+    padding: 3px;
+}
+.footer_sec .footer_main .footer_body .form button{
+    padding: 3px 5px;
+}
+/* =================================
+  10. copyright_sec css
+=====================================*/
+.copyright_sec{
+    padding: 10px 30px;
+    color: var(--white);
+    background: #252526;
+    border-top:1px solid #595656;
+}
+.copyright_sec .copyr{
+    float: left;
+    font-size: 13px;
+}.copyright_sec .author{
+    text-align: right;
+    font-size: 13px;
+}
+.copyright_sec p{
+    font-family: var(--heading-font-family);
+}
